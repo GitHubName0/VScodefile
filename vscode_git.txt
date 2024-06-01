@@ -2,12 +2,30 @@
 #2. 打开vscode设置，在搜索框中搜索git.path
 #3. 打开Edit in settings.json文件配置git路径如下
 "git.path": "C:/Program Files/Git/bin/git.exe"
-
 #4. 新增加一个文件编辑本地仓库的文件<filename>，已存在的文件修改后未提交会在explorer中显示为M，新增加的文件未添加到仓库的标记为U，已经删除的文件显示为D
 
 #5. 打开vscode中的终端或者电脑里面的命令窗口，配置Git用户名和邮箱
 git config --global user.name "LiPeng"
-git config --global user.email "495074047@qq.com"
-#3.生成密钥SSH，保存的路径为 C:\Users\64380/.ssh/
-ssh-keygen -t rsa -b 4096 -C "495074047@qq.com"
-#
+git config --global user.email "643800840@qq.com"
+
+#6.生成密钥SSH，保存的路径为 C:\Users\64380/.ssh/
+ssh-keygen -t rsa -b 4096 -C "643800840@qq.com"
+
+#7. 查看密钥并添加到github密钥连接设置
+cat ~/.ssh/id_rsa.pub
+放置在github设置中的SSH中，添加一个新的认证密钥
+
+#8. 测试是否连接成功，出现successfully就成功了
+ssh -T git@github.com
+#Hi GitHubName0! You've successfully authenticated, but GitHub does not provide shell access.
+
+#9.复制代码远程连接，克隆到本地
+git clone https://github.com/GitHubName0/VScodefile.git
+
+#10. 查看分支，然后改个名
+git branch -a
+
+#11. 修改分支名称
+git branch -m 原分支名 新分支名
+
+#12. git status
