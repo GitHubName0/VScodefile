@@ -1,7 +1,13 @@
-#1.下载git打开https://git-scm.com/下载
-#2. 打开vscode中的终端或者电脑里面的命令窗口，配置Git用户名和邮箱
+#1.下载git打开https://git-scm.com/ 和vscode
+#2. 打开vscode设置，在搜索框中搜索git.path
+#3. 打开Edit in settings.json文件配置git路径如下
+"git.path": "C:/Program Files/Git/bin/git.exe"
+
+#4. 新增加一个文件编辑本地仓库的文件<filename>，已存在的文件修改后未提交会在explorer中显示为M，新增加的文件未添加到仓库的标记为U，已经删除的文件显示为D
+
+#5. 打开vscode中的终端或者电脑里面的命令窗口，配置Git用户名和邮箱
 git config --global user.name "LiPeng"
 git config --global user.email "495074047@qq.com"
 #3.生成密钥SSH，保存的路径为 C:\Users\64380/.ssh/
 ssh-keygen -t rsa -b 4096 -C "495074047@qq.com"
-
+#
