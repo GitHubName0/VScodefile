@@ -1,0 +1,7 @@
+#1.下载git打开https://git-scm.com/下载
+#2. 打开vscode中的终端或者电脑里面的命令窗口，配置Git用户名和邮箱
+git config --global user.name "LiPeng"
+git config --global user.email "495074047@qq.com"
+#3.生成密钥SSH，保存的路径为 C:\Users\64380/.ssh/
+ssh-keygen -t rsa -b 4096 -C "495074047@qq.com"
+
